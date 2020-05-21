@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--Weather ForecastVC-->
+        <!--Multiple CitiesVC-->
         <scene sceneID="pOu-K4-NRO">
             <objects>
-                <viewController storyboardIdentifier="WeatherForecastVC" id="ZwL-fP-rPh" customClass="WeatherForecastVC" customModule="AKWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherForecastVC" id="ZwL-fP-rPh" customClass="MultipleCitiesVC" customModule="AKWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S68-PF-cfB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,7 +539,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YYo-wR-G29" firstAttribute="leading" secondItem="KvQ-1Y-8hR" secondAttribute="leading" id="667-BU-Ued"/>
                             <constraint firstItem="KvQ-1Y-8hR" firstAttribute="trailing" secondItem="YYo-wR-G29" secondAttribute="trailing" id="oUF-F6-7Hl"/>

@@ -75,7 +75,7 @@ extension FiveDayForecastVC : UITableViewDataSource {
         cell.lblMIn.text = cast.avgTempMin
         cell.lblMax.text = cast.avgTempMax
         cell.lblWind.text = cast.avgWind
-        cell.lblDesc.text = cast.desc
+        cell.lblDesc.text = cast.desc.capitalized
         cell.lblDate.text = cast.date
         cell.imgView.image = UIImage(data: try! Data(contentsOf: URL(string: cast.icon)!))
         return cell

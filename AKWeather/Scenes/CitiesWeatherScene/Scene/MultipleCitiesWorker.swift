@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class MultipleCitiesService {
+final class MultipleCitiesWorker {
     
     private var client: HttpClient
     

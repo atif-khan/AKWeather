@@ -27,7 +27,7 @@ class AKWeatherTests: XCTestCase {
     //        let path = "data/2.5/group"
             
             client.load(path: "", method: .get, params: [:]) { (data, error) in
-                
+
             }
             
             XCTAssertNotNil(mockSession.lastURL, "Base Url should not be nil")

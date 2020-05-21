@@ -22,6 +22,21 @@ class AKWeatherUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testInputFlow() {
+        
+        
+        let app = XCUIApplication()
+        app.textFields["E.g Dubai, Sharjah, Abu Dhabi"].tap()
+        
+        let checkWeatherStaticText = app/*@START_MENU_TOKEN@*/.staticTexts["CHECK WEATHER"]/*[[".buttons[\"CHECK WEATHER\"].staticTexts[\"CHECK WEATHER\"]",".staticTexts[\"CHECK WEATHER\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        checkWeatherStaticText.tap()
+        app.alerts["Error"].scrollViews.otherElements.buttons["OK"].tap()
+        checkWeatherStaticText.tap()
+        app.navigationBars["AKWeather.MultipleCitiesVC"].buttons["Back"].tap()
+        
+        
+    }
 
     func testExample() throws {
         // UI tests must launch the application that they test.
